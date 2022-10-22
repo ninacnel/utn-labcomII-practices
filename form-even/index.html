@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Formulario de libro</h1>
+        <section>
+            <form action=" ">
+                <fieldset>
+                    <label for="codigo">Código</label><br>
+                    <input type="number" placeholder="Ingrese el código" name="codigo" required><br>
+                    <label for="titulo">Nombre del libro</label><br>
+                    <input type="text" id="texto" placeholder="Ingrese el título" name="titulo" required><br>
+                    <label for="genero">Género del libro</label>
+                    <br>
+                    <select name="genero" id="select_id" required>
+                        <option value="1">Novela</option>
+                        <option value="2">Teatro</option>
+                        <option value="3">Poesía</option>
+                        <option value="4">Ensayo</option>
+                    </select>
+                    <br>
+                    <label for="editorial">Editorial</label><br>
+                    <input type="text" placeholder="Ingrese la editorial" name="editorial" required><br>
+                    <label for="anio">Año</label><br>
+                    <input type="date" name="anio"><br>
+                    <label for="autor">Autor</label><br>
+                    <input type="text" placeholder="Apellido y nombre del autor" name="autor" required><br>
+                    <button type="submit" id="enviar" name="enviar">Enviar</button>
+                    <button type="reset" name="limpiar">Limpiar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
